@@ -7,11 +7,11 @@ The download will be presented as a zipped file named "ncbi_dataset", inside wil
 
 Path = ncbi_dataset(zipped)/ncbi_dataset/data/assembly_data_report.jsonl 
 
-2. Move all of the reports mv *assembly_data_report.jsonl ./curated_database_genome_assemblies_data_report
+Move all of the reports mv *assembly_data_report.jsonl ./curated_database_genome_assemblies_data_report
    
-4. Grep command on all files looking for "true" this will only be present if the genome assembly is atypical "isAtypical". Then move (mv) these files into folder "genomes_flagged_atypical"
+Grep command on all files looking for "true" this will only be present if the genome assembly is atypical "isAtypical". Then move (mv) these files into folder "genomes_flagged_atypical"
    
-6. If this is only a few then can manually check and make note of the atypical flag and manually remove from curated_database.  
+If this is only a few then can manually check and make note of the atypical flag and manually remove from curated_database.  
 If too many, then can ask to print the accession number of each one into a csv file from this can create a loop to remove the many genome assemblies. 
 
 
